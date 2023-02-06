@@ -2,7 +2,7 @@ import Link from "next/link";
 import { IoLocationSharp } from "react-icons/io5";
 import styles from "./styles.module.scss";
 
-export default function Copyright() {
+export default function Copyright({ country }) {
   return (
     <div className={styles.footer__copyright}>
       <section>©2023 SHOPPAY All Rights Reserved.</section>
@@ -15,7 +15,7 @@ export default function Copyright() {
           ))}
           <li>
             <a href="">
-              <IoLocationSharp /> Iran
+              <IoLocationSharp /> {country.name}
             </a>
           </li>
         </ul>
